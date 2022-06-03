@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: sans-serif;
+        }
+
+        .principal-title{
+            padding: 10px 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .container-video{
+            display: flex;
+            justify-content: center;
+        }
+        .container-video video{
+            width: 90vw;
+            border-radius: 5px;
+        }
+
+        .container-text{ 
+            padding: 30px;
+        }
+
+        .container-text p{
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            line-height: 20px;
+        }
+
+        .images{
+            padding: 30px 0;
+        }
+        .image-container { 
+            display: flex;
+            
+            padding: 10px 30px;
+        }
+        .image-container img {
+            width: 150px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+
+        .video{
+            display: flex; 
+            justify-content: center;
+            padding: 50px 0;
+        }
+
+        video{
+            width:80vw;
+            border-radius: 5px;
+        }
+
+        .pedido { 
+            margin-bottom: 150px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        #pedido-button{
+            padding: 20px 30px; 
+            border-radius: 5px;
+            background: rgb(221, 18, 18);
+            color: white;
+            font-weight: bold;
+            margin: 40px auto;
+            
+         }
+        .pedido h3{
+            display: hidden;
+        }
+
+        .tela2{
+            display:hidden;
+            background:rgb(221, 18, 18); 
+            color: white; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tela1">
+
+    <div class="principal-title">
+        <h2>Que bom que conseguimos caminhar até aqui...</h2> 
+    </div>
+
+    <div class="container-video">
+        <video src="./assets/videos/walking.mp4" muted autoplay></video>
+    </div>
+
+    <div class="container-text">
+        
+        <p>Acho que tudo começou no dia que fomos na ponte do paiva. Lembro que você estava distante por conta de um dia conturbado, então resolvi te chamar pra sair, ver o sol se pôr em cima da ponte e ficar te enchendo de perguntas malucas sobre a vida. Tiramos nossa primeira foto juntos aqui. Me recordo de chegar em casa, olhar pra nossa foto e pensar: “por quanto tempo ficaremos juntos pra um dia olharmos para essa foto e lembrar desse dia?”.  </p>
+
+        <p>Recentemente estava refletindo sobre esse pensamento que tive e cheguei a conclusão que podemos construir isso juntos e fazer esse dia chegar. Quero que nossos dias sejam prolongados, quero fazer mais charadas em troca de um pote de paçoca, quero sentar mais vezes pra assistir the walking dead enquanto comemos Yakissoba e bolinhos de queijo, quero tomar mais banhos de chuva, viajar, conhecer novas coisas e tudo isso com você. </p>
+        
+        <p>Tudo isso é muito intenso, é como se estivéssemos juntos há mais tempo. Muitas vezes nos olhamos e já sabemos o que o outro está pensando - e depois vem aquele sorriso bobo. 
+        E como poderíamos imaginar que viveríamos tantas emoções que vivemos nesses meses naquele dia que fomos assistir aquele filme de terror (que era muito ruim) que escolhi só pra você sentir medo e me abraçar em algum momento? </p>
+        
+        <p>Falando nesse dia, o tenho como se fosse um filme rodando em loop na minha cabeça. Você chegou na minha casa toda perfumada e cheirosa, enquanto eu ainda não estava pronto, todo descabelado e fedendo a suor te pedindo só mais dez minutos pra terminar o que estava fazendo. E você toda paciente (como sempre) disse “sem problemas”. Acho que o melhor investimento que fiz foi te chamar pra assistir esse filme. </p>
+    </div>
+
+    <hr>
+
+    <div class="images">
+
+    <div class="image-container">
+        <img src="./assets/images/image1.jpeg"> 
+        <p>E cá estamos nós, juntinhos nos organizando e cada dia que se passa sinto que quero estar com você. E só com você.</p>
+    </div> 
+
+    <div class="image-container">
+        <p>Espero que eu possa cada vez mais ter essas lembranças boas dos meus dias com você. </p>
+        <img src="./assets/images/image2.jpeg"> 
+    </div> 
+</div>
+
+<hr> 
+<div class="video">
+    <video src="./assets/videos/video.mp4" autoplay muted></video>
+</div>
+
+<div class="pedido">
+        <p><strong>Recentemente você me mandou esse vídeo e aí eu tive certeza de que queria falar sobre isso.</strong></p> 
+        <br>
+        <br>
+        <br>
+        <h2>E agora que chegamos até aqui gostaria de te perguntar uma coisa...👇👇👇👇</h2>
+        
+        <a id="pedido-button">Está pronta? Clica aqui...</a>
+        
+        
+    </div>
+    
+</div>
+
+<div class="tela2">
+        <h1 id="pedido-area"></h1>
+        <audio class="audio"></audio> 
+</div>
+
+    <script src="./js/pedidoButton.js"></script>
+    
+</body>
+</html>
